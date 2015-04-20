@@ -1,10 +1,8 @@
-package com.example.jeanette.planpenny;
+package com.example.jeanette.planpenny.Fragments;
 
 import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentTransaction;
-import android.content.Context;
-import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,21 +10,21 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.jeanette.planpenny.R;
+
 
 public class MainScreenFragment extends Fragment implements View.OnClickListener {
 
-    Context context;
+
     Button buttonTasks,buttonProjects, buttonCalendar, buttonClipBoard, buttonCategories;
     TextView textMainTitle;
-    public Typeface RegularFont = Typeface.createFromAsset(context.getAssets(), "fonts/latoregular.ttf");
-    public Typeface LightFont = Typeface.createFromAsset(context.getAssets(),"fonts/latolight.ttf");
+
+    //Import fonts from fonts
+    //public Typeface RegularFont = Typeface.createFromAsset(context.getAssets(), "fonts/latoregular.ttf");
+
+
     public MainScreenFragment(){
         // Required empty public constructor
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
     }
 
 
@@ -38,7 +36,7 @@ public class MainScreenFragment extends Fragment implements View.OnClickListener
 
         textMainTitle = (TextView) frag.findViewById(R.id.textMainTitle);
 
-        textMainTitle.setTypeface(RegularFont);
+        //textMainTitle.setTypeface(RegularFont);
         getFragmentManager().beginTransaction()
                 .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
                 .replace(R.id.insertFrag, new TasksFragment())
@@ -53,12 +51,13 @@ public class MainScreenFragment extends Fragment implements View.OnClickListener
         buttonClipBoard = (Button) frag.findViewById(R.id.buttonClipBoard);
         buttonCategories = (Button) frag.findViewById(R.id.buttonCategories);
 
-        buttonTasks.setTypeface(RegularFont);
+        /*buttonTasks.setTypeface(RegularFont);
         buttonProjects.setTypeface(RegularFont);
         buttonProjects.setTypeface(RegularFont);
         buttonCalendar.setTypeface(RegularFont);
         buttonClipBoard.setTypeface(RegularFont);
         buttonCategories.setTypeface(RegularFont);
+        */
 
         //onclick listeners
         buttonTasks.setOnClickListener(this);
@@ -99,7 +98,7 @@ public class MainScreenFragment extends Fragment implements View.OnClickListener
         }else if(v==buttonCalendar){
                 getFragmentManager().beginTransaction()
                         .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
-                        .replace(R.id.insertFrag, new CalendarFragtment())
+                        .replace(R.id.insertFrag, new CalendarFragment())
                         .addToBackStack(null)
                         .commit();
 

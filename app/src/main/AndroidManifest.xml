@@ -19,6 +19,54 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Activities.TasksActivity"
+            android:label="TasksActivity" >
+        </activity>
+        <activity
+            android:name=".Activities.ProjectActivity"
+            android:label="ProjectActivity" >
+        </activity>
+        <activity
+            android:name=".Activities.CalendarActivity"
+            android:label="@string/title_activity_calendar" >
+        </activity>
+        <activity
+            android:name=".Activities.ClipBoardActivity"
+            android:label="@string/title_activity_clip_board" >
+        </activity>
+        <activity
+            android:name=".Activities.CategoriesActivity"
+            android:label="@string/title_activity_categories" >
+        </activity>
+        <activity
+            android:name=".Test"
+            android:label="@string/title_activity_test" >
+        </activity>
+        <activity
+            android:name=".Activities.CalendarView"
+            android:label="@string/title_activity_calendar_view" >
+        </activity>
+        <activity
+            android:name=".Activities.CalendarViewSampleActivity"
+            android:label="@string/title_activity_calendar_view_sample" >
+        </activity>
+        <activity
+            android:name=".Activities.ChooseColor"
+            android:label="@string/title_activity_choose_color" >
+        </activity>
+        <activity
+            android:name=".Activities.LoginActivity"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name=".Settings"
+            android:label="@string/title_activity_settings" >
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main" >
+        </activity>
     </application>
 
 </manifest>

@@ -1,6 +1,6 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" tools:context="com.example.jeanette.planpenny.Fragments.MainScreenFragment">
+    android:layout_height="match_parent" tools:context="com.example.jeanette.planpenny.MainActivity">
 
 
     <LinearLayout
@@ -17,19 +17,15 @@
             android:background="@color/MainColor"
             android:weightSum="1">
 
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"></LinearLayout>
-
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Categories"
                 android:id="@+id/textMainTitle"
                 android:textColor="@color/SecondaryColor"
-                android:textSize="@android:dimen/app_icon_size" />
+                android:textSize="@android:dimen/app_icon_size"
+
+                android:text="Main" />
 
             <LinearLayout
                 android:orientation="horizontal"
@@ -40,7 +36,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/editTextSearch"
-                    android:layout_weight="0.18"
                     android:text="Search"
                     android:textColor="@color/SecondaryColor" />
 
@@ -58,16 +53,16 @@
 
             <Button
                 android:layout_width="wrap_content"
-                android:layout_height="79dp"
+                android:layout_height="25dp"
                 android:layout_weight="1"
-                android:background="@color/MainColor"
+                android:background="@color/SecondaryColor"
                 android:text="Tasks"
                 android:id="@+id/buttonTasks"
-                android:textColor="@color/SecondaryColor" />
+                android:textColor="@color/MainColor" />
 
             <Button
                 android:layout_width="wrap_content"
-                android:layout_height="79dp"
+                android:layout_height="25dp"
                 android:layout_weight="1"
                 android:background="@color/MainColor"
                 android:text="Projects"
@@ -76,7 +71,7 @@
 
             <Button
                 android:layout_width="wrap_content"
-                android:layout_height="79dp"
+                android:layout_height="25dp"
                 android:layout_weight="1"
                 android:background="@color/MainColor"
                 android:text="Calendar"
@@ -85,7 +80,7 @@
 
             <Button
                 android:layout_width="wrap_content"
-                android:layout_height="79dp"
+                android:layout_height="25dp"
                 android:layout_weight="1"
                 android:background="@color/MainColor"
                 android:text="Clip Board"
@@ -94,7 +89,7 @@
 
             <Button
                 android:layout_width="wrap_content"
-                android:layout_height="79dp"
+                android:layout_height="25dp"
                 android:layout_weight="1"
                 android:background="@color/MainColor"
 

@@ -3,20 +3,29 @@
 
     <string name="app_name">Plan Penny</string>
     <string name="title_activity_start_splash">StartSplash</string>
-    <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_start_screen">StartScreen</string>
+    //Strings in calendar                    <string name="hello">Open calendar</string>
+    <string name="open">Open</string>
 
     <color name="MainColor">#eb5c3e</color>
     <color name="SecondaryColor">#fef3ea</color>
 
     <string name="title_activity_tasks">Tasks</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_projects">Projects</string>
     <string name="title_activity_calendar">Calendar</string>
-    <string name="title_activity_clip_board">ClipBoard</string>
+    <string name="title_activity_clip_board">Clip Board</string>
     <string name="title_activity_categories">Categories</string>
     <string name="title_activity_calendar_view">CalendarView</string>
     <string name="title_activity_main_screen1">MainScreen1</string>
+    <string name="title_activity_main_screen">MainScreenActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_test">Test</string>
+    <string name="title_activity_calendar_view_sample">CalendarViewSampleActivity</string>
+    <string name="title_activity_choose_color">ChooseColor</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

@@ -1,0 +1,101 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.example.jeanette.planpenny.Fragments.MainScreenFragment">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="86dp"
+            android:layout_gravity="left|top"
+            android:background="@color/MainColor"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Tasks"
+                android:id="@+id/textMainTitle"
+                android:textColor="@color/SecondaryColor"
+                android:textSize="@android:dimen/app_icon_size" />
+
+            <SearchView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/searchView"
+                android:queryHint="Search here"
+                android:textColor="@color/SecondaryColor"/>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="359dp"
+            android:layout_gravity="left|top"
+            android:id="@+id/insertFrag"
+            android:layout_weight="0.07"
+            android:background="@drawable/transparentbackground">
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="64dp"
+            android:layout_weight="1.05">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/MainColor"
+                android:text="@string/title_activity_tasks"
+                android:id="@+id/buttonTasks"
+                android:clickable="true" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/SecondaryColor"
+                android:text="@string/title_activity_projects"
+                android:id="@+id/buttonProjects"
+                android:clickable="true" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/SecondaryColor"
+                android:text="@string/title_activity_calendar"
+                android:id="@+id/buttonCalendar"
+                android:clickable="true" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/SecondaryColor"
+                android:text="@string/title_activity_clip_board"
+                android:id="@+id/buttonClipBoard"
+                android:clickable="true" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/SecondaryColor"
+                android:text="@string/title_activity_categories"
+                android:id="@+id/buttonCategories"
+                android:clickable="true" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

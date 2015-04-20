@@ -1,10 +1,15 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.jeanette.planpenny.ProjectsGannt">
+    tools:context="com.example.jeanette.planpenny.Fragments.ProjectsGannt"
+    android:background="@drawable/transparentbackground">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView android:layout_width="match_parent" android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Fragment Gannt"
+        android:id="@+id/textView6"
+        android:layout_gravity="left|center_vertical" />
 </FrameLayout>

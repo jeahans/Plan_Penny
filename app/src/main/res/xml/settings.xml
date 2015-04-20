@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+        android:key="LogOnEveryTime"
+        android:title="Log on every time"
+        android:summary="Log on every time"
+        android:defaultValue="false" />
+
+    <CheckBoxPreference
+        android:key="OnlySyncWiFi"
+        android:title="Only synchronize on WiFi"
+        android:summary="Only synchronize on WiFi"
+        android:defaultValue="false" />
+
+    <CheckBoxPreference
+        android:key="SyncWithCal"
+        android:title="Synchronize with calendar"
+        android:summary="Synchronize with calendar"
+        android:defaultValue="false" />
+
+    <SwitchPreference
+        android:key="LogOff"
+        android:title="Log off"
+        android:summary="Log off"
+        android:defaultValue="false"
+        />
+</PreferenceScreen>
